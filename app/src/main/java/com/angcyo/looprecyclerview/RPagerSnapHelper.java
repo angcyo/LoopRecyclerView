@@ -63,6 +63,8 @@ public class RPagerSnapHelper extends PagerSnapHelper {
         }
     }
 
+
+
     @Nullable
     @Override
     public int[] calculateDistanceToFinalSnap(@NonNull RecyclerView.LayoutManager layoutManager, @NonNull View targetView) {

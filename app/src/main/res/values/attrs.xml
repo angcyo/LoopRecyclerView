@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RLoopRecyclerView">
+        <attr name="ScrollMode" format="enum">
+            <enum name="normal" value="0"/>
+            <enum name="page" value="1"/>
+        </attr>
+    </declare-styleable>
+</resources>

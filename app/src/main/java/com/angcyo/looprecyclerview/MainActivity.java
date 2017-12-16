@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    class MyAdapter extends RLoopRecyclerView.LoopAdapter<MyViewHolder> {
+    class MyAdapter extends RLoopRecyclerView.LoopAdapter<String,MyViewHolder> {
         @Override
         public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
             View inflate = LayoutInflater.from(MainActivity.this)
