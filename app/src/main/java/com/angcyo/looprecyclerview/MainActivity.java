@@ -48,17 +48,17 @@ public class MainActivity extends AppCompatActivity {
         loopRecyclerView.setAdapter(myAdapter);
     }
 
-    class MyViewHolder extends RecyclerView.ViewHolder {
+    public static class MyViewHolder extends RecyclerView.ViewHolder {
 
         public MyViewHolder(View itemView) {
             super(itemView);
         }
     }
 
-    class MyAdapter extends RLoopRecyclerView.LoopAdapter<MyViewHolder> {
+    public static class MyAdapter extends RLoopRecyclerView.LoopAdapter<MyViewHolder> {
         @Override
         public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-            View inflate = LayoutInflater.from(MainActivity.this)
+            View inflate = LayoutInflater.from(parent.getContext())
                     .inflate(R.layout.item_text_view, parent, false);
             return new MyViewHolder(inflate);
         }
