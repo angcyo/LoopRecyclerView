@@ -146,7 +146,7 @@ public class RExLoopRecyclerView extends RecyclerView {
             final int currentPosition = getCurrentPosition();
 
             int position = ((LoopLayoutManager) getLayoutManager()).getReverseLayout() ?
-                    currentPosition - offsetPosition : currentPosition + offsetPosition;
+                    currentPosition + offsetPosition : currentPosition - offsetPosition;
             smoothScrollToPosition(position);
         }
     }
